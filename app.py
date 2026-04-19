@@ -2,11 +2,16 @@ from __future__ import annotations
 
 import streamlit as st
 
-from charts import render_vertical_stacked_bar
-from dashboard_data import format_month_label, load_records, select_filters
-from dashboard_utils import filter_month, month_total_cost, previous_month_label, with_environment_group
-from kpi_cards import render_team_kpi_cards
-from team_labels import team_label
+from finops_dashboard.config.team_labels import team_label
+from finops_dashboard.data.source import format_month_label, load_records, select_filters
+from finops_dashboard.data.transforms import (
+    filter_month,
+    month_total_cost,
+    previous_month_label,
+    with_environment_group,
+)
+from finops_dashboard.ui.charts import render_vertical_stacked_bar
+from finops_dashboard.ui.kpi_cards import render_team_kpi_cards
 
 
 st.set_page_config(

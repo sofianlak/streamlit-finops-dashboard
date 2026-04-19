@@ -3,7 +3,7 @@ import unittest
 
 import pandas as pd
 
-from dashboard_utils import (
+from finops_dashboard.data.transforms import (
     available_months,
     filter_month,
     month_total_cost,

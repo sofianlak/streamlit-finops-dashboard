@@ -5,9 +5,9 @@ from datetime import date, timedelta
 import pandas as pd
 import streamlit as st
 
-from dashboard_utils import available_months, filter_month, with_environment_group
-from finops_model import generate_finops_records
-from team_labels import team_label
+from finops_dashboard.config.team_labels import team_label
+from finops_dashboard.data.model import generate_finops_records
+from finops_dashboard.data.transforms import available_months, filter_month, with_environment_group
 
 
 HISTORY_DAYS = 540

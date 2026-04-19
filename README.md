@@ -2,7 +2,7 @@
 > [!NOTE]  
 > This is still in development. Treat it as a POC.
 
-![FinOps dashboard preview](finops-dashboard.png)
+![FinOps dashboard preview](assets/finops-dashboard.png)
 
 Simple Streamlit dashboard to track monthly cloud spend by team across:
 - Azure
@@ -15,12 +15,20 @@ Current phase uses simulated data.
 ## Run
 
 ```bash
-cd /Users/sofian/dev/poc-finops
+cd streamlit-finops-dashboard
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Project layout
+
+- `app.py`: main executive dashboard
+- `pages/`: focused drill-down pages
+- `finops_dashboard/config`: colors and labels
+- `finops_dashboard/data`: data generation, loading and transforms
+- `finops_dashboard/ui`: reusable UI components
 
 ## Phase 2 (planned)
 

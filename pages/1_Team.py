@@ -3,9 +3,9 @@ from __future__ import annotations
 import plotly.express as px
 import streamlit as st
 
-from charts import render_vertical_stacked_bar
-from dashboard_data import format_month_label, load_records, select_filters
-from team_labels import team_label
+from finops_dashboard.config.team_labels import team_label
+from finops_dashboard.data.source import format_month_label, load_records, select_filters
+from finops_dashboard.ui.charts import render_vertical_stacked_bar
 
 
 st.set_page_config(

@@ -1,7 +1,7 @@
 from datetime import date
 import unittest
 
-from finops_model import (
+from finops_dashboard.data.model import (
     PROVIDERS,
     TEAMS,
     detect_spikes,

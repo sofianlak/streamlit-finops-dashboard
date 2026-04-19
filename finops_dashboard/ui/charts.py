@@ -8,7 +8,7 @@ import plotly.express as px
 import streamlit as st
 import streamlit.components.v1 as components
 
-from brand_colors import PROVIDER_COLORS, provider_color_sequence
+from finops_dashboard.config.branding import PROVIDER_COLORS, provider_color_sequence
 
 
 def _stacked_pivot(
