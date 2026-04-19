@@ -1,4 +1,8 @@
 # FinOps Teams Dashboard
+> [!NOTE]  
+> This is still in development. Treat it as a POC.
+
+![FinOps dashboard preview](finops-dashboard.png)
 
 Simple Streamlit dashboard to track monthly cloud spend by team across:
 - Azure
